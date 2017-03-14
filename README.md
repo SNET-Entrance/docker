@@ -11,7 +11,7 @@ The sources are fetched from:
 - https://github.com/SNET-Entrance/Entrance-UM
 - https://github.com/SNET-Entrance/Entrance-KEX
 
-# Start the docker conatiners with:
+# Start docker containers with:
 sudo docker-compose up -d
 
 # Get the log
@@ -27,4 +27,4 @@ sudo docker-compose exec kex /bin/bash
 - localhost:5001 (KeyExchange (kex) GUI)
 
 # A test user is already preconfigured:
-Testuser:Test1234 
+Testuser:Test1234
