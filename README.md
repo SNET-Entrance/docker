@@ -26,5 +26,5 @@ sudo docker-compose exec kex /bin/bash
 - localhost:5000 (Dashboard/Frontend GUI)
 - localhost:5001 (KeyExchange (kex) GUI)
 
-# A test user is already preconfigured available:
+# A test user is already preconfigured:
 Testuser:Test1234 
