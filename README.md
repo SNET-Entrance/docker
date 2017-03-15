@@ -33,3 +33,9 @@ sudo docker-compose exec kex /bin/bash
 
 # A test user is already preconfigured:
 Testuser:Test1234
+
+# Backend
+The backend consists of the 'Entrance service' and the 'Vanish Core' and 'Vuze Vanish Backend'. 
+Both Vanish components can be downloaded from https://vanish.cs.washington.edu/download.html - check their licence agreement!
+The 'Entrance service' ist available here https://github.com/SNET-Entrance/Entrance-Backend.
+Using docker automatically fetches, compiles and starts the Entrance-Backend. In order to distribute keys using the DHT, Vansih needs to be downloaded manually. The Vanaish files should be copied into the empty Docker folder called "vanish".
