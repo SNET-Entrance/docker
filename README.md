@@ -1,6 +1,6 @@
 # User guide:
-This folder conatins all you need to setup Entrance using Docker 
-Tested on Unbuntu 16.04. with:
+This folder contains all you need to setup Entrance using Docker, 
+Tested on Ubuntu 16.04. with:
 - docker version 17.03.0-ceer (community edition)
 - docker-compose version 1.11.2,
 
@@ -8,8 +8,13 @@ Tested on Unbuntu 16.04. with:
 sudo docker-compose build
 
 The sources are fetched from: 
+
+Dashboard/Frontend and KeyExchange (KEX) services
 - https://github.com/SNET-Entrance/Entrance-UM
 - https://github.com/SNET-Entrance/Entrance-KEX
+
+Backend (not yet dockerized  - comming soon!)
+- https://github.com/SNET-Entrance/Entrance-Backend
 
 # Start docker containers with:
 sudo docker-compose up -d
@@ -17,7 +22,7 @@ sudo docker-compose up -d
 # Get the log
 sudo docker-compose logs -f
 
-# Optional jump into the "frontend" or "kex" container:  
+# Optional: jump into the "frontend" or "kex" container:  
 
 sudo docker-compose exec frontend /bin/bash 
 sudo docker-compose exec kex /bin/bash 
