@@ -24,7 +24,8 @@ sudo docker-compose logs -f
 
 # Optional: jump into the "frontend" or "kex" container:  
 
-sudo docker-compose exec frontend /bin/bash 
+sudo docker-compose exec frontend /bin/bash
+
 sudo docker-compose exec kex /bin/bash 
 
 # Webinterfaces are available on:
