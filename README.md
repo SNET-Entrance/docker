@@ -35,6 +35,11 @@ sudo docker-compose exec kex /bin/bash
 # A test user is already preconfigured:
 Testuser:Test1234
 
+# Data mapping between docker and your host system:
+The docker container's "/root/.entrance" folder is mapped to the ./data/entrance folder of your host machine. 
+This means adding content to the Dashboard (fit-file upload) will appear in ./data/entrance/ of your local machine.
+Hereby "." represents the folder where you executed "docker-compose up -d". 
+
 # Backend
 The backend consists of the 'Entrance service' and the 'Vanish Core' and 'Vuze Vanish Backend'. 
 Both Vanish components can be downloaded from https://vanish.cs.washington.edu/download.html - check their licence agreement!
