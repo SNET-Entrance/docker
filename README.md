@@ -19,6 +19,10 @@ Backend (not yet dockerized  - comming soon!)
 # Start docker containers with:
 sudo docker-compose up -d
 
+
+# Stop docker containers with:
+sudo docker-compose kill
+
 # Get the log
 sudo docker-compose logs -f
 
