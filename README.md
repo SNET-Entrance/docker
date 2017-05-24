@@ -39,6 +39,15 @@ sudo docker-compose exec kex /bin/bash
 # A test user is already preconfigured:
 Testuser:Test1234
 
+# Using an edugain account for login:
+ After
+ 
+ 1st. defining a login/password for a SMTP server in config/default.py
+ 
+ 2nd. creating a local account using your edugain-ready email address,
+ 
+ you can log into the Dashboard using your edugain credentials. Trigger the edugain login by clicking on the Cyclone logo at the login page.
+
 # Data mapping between docker and your host system:
 The docker container's "/root/.entrance" folder is mapped to the ./data/entrance folder of your host machine. 
 This means adding content to the Dashboard (fit-file upload) will appear in ./data/entrance/ of your local machine.
