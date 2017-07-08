@@ -6,8 +6,8 @@ RUN mkdir Entrance-PJ
 WORKDIR /Entrance-PJ
 RUN git clone https://github.com/SNET-Entrance/Entrance-UM 
 WORKDIR /Entrance-PJ/Entrance-UM/src
-RUN python setup-database.py install
 RUN python setup.py install
+RUN python setup-database.py install
 #ENTRYPOINT ["python"]
 #RUN python run.py &
 CMD ["python","./run.py"]

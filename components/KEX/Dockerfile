@@ -6,8 +6,8 @@ RUN mkdir Entrance-PJ
 WORKDIR /Entrance-PJ
 RUN git clone https://github.com/SNET-Entrance/Entrance-KEX 
 WORKDIR /Entrance-PJ/Entrance-KEX/src
-RUN python setup-database.py install
 RUN python setup.py install
+RUN python setup-database.py install
 #ENTRYPOINT ["python"] 
 CMD ["python", "./run.py"]
 expose 5001
