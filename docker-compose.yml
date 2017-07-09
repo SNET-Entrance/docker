@@ -15,7 +15,7 @@ services:
 #    - kex:kex
    ports:
       - "20000:20000" 
-  volumes:
+   volumes:
      - "./data/entrance:/root/.entrance"  
      - "./componets/Frontend/config:/Entrance-PJ/Entrance-UM/src/config" 
         #   environment:
