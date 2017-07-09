@@ -3,8 +3,8 @@ services:
  kex:
    build: components/KEX
    ports:
-     - "20001:20001"
-  volumes:
+      - "20001:20001"
+   volumes:
       - "./data/kex:/root/.kex" 
   
  frontend:
@@ -16,7 +16,5 @@ services:
    ports:
       - "20000:20000" 
    volumes:
-     - "./data/entrance:/root/.entrance"  
-     - "./componets/Frontend/config:/Entrance-PJ/Entrance-UM/src/config" 
-        #   environment:
-        # - APP_CONFIG_FILE=/home/bot/sources/github/Entrance-UM/src/instance/default.py
+      - "./data/entrance:/root/.entrance"
+      - "./components/Frontend/config:/Entrance-PJ/Entrance-UM/src/config" 
